@@ -21,5 +21,7 @@ model.add(Dense(128, input_shape = X.shape[1:], activation= 'relu'))
 
 model.add(Dense(2, activation='softmax'))
 
+model.fit(X, Y, epochs=5, validation_split=0.1)
+
 
 
